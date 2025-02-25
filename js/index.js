@@ -27,7 +27,7 @@ async function handleSearchButton(e) {
     emptyStateWrapper.style.display = 'none'
     noResultsWrapper.style.display = 'none'
     const searchInput = searchBar.value.replace(/\s/g, '+')
-    const response = await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&s=${searchInput}`)
+    const response = await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&s=${searchInput}`)
     const data = await response.json()
     console.log(data)
     if (data.Response === "True"){
@@ -54,7 +54,7 @@ function saveSearchIds(data) {
 
 async function getMovieProperties(movieArray) {
     for (let movieItem of movieArray) {
-        const response = await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&i=${movieItem}`)
+        const response = await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&i=${movieItem}`)
         const data = await response.json()
         renderMovie(data)
     }
