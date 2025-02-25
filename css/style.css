@@ -80,6 +80,7 @@ p {
   text-align: center;
 
   margin-top: 10em;
+  padding: 0 1em;
 }
 
 .film-icon {
@@ -195,6 +196,25 @@ p {
   margin-right: 0.25em;
 }
 
+.link-to-search-icon {
+    width: 20px;
+  }
+
+#link-to-search {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    gap: 0.5em;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#link-to-search:hover, #link-to-search:focus {
+    text-decoration: underline;
+}
+
 @media (min-width: 481px) {
   .heading-wrapper,
   .search-form,
@@ -284,7 +304,16 @@ p {
     margin: 0 0 0 1em;
     font-size: 1rem;
   }
+
+  .link-to-search-icon {
+    width: 30px;
+  }
+
+  #link-to-search {
+    font-size: 1.5rem;
+  }
 }
+
 
 @media (min-width: 769px) {
   .heading-wrapper,
@@ -431,6 +460,14 @@ p {
   }
 
   .toggle-watchlist-button {
+    font-size: 2rem;
+  }
+
+  .link-to-search-icon {
+    width: 50px;
+  }
+
+  #link-to-search {
     font-size: 2rem;
   }
 }

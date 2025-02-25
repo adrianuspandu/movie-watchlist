@@ -1,5 +1,6 @@
 const apiKey = '5fc6becc'
 const moviesWrapper = document.getElementById('movies-wrapper')
+const emptyStateWrapper = document.getElementById('empty-state-wrapper')
 
 let searchResultsArray = []
 let watchlistArray = []
@@ -8,9 +9,12 @@ if (localStorage.getItem("watchlistIds")) {
   watchlistArray = JSON.parse(localStorage.getItem('watchlistIds'))
 }
 
-renderWatchlist()
+if (watchlistArray.length > 0) {
+    renderWatchlist()
+}
 
 function renderWatchlist() {
+    emptyStateWrapper.style.display = 'none'
     moviesWrapper.innerHTML = ''
     getMovieProperties(watchlistArray)
 }
