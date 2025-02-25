@@ -18,7 +18,7 @@ function renderWatchlist() {
 
 async function getMovieProperties(movieArray) {
     for (let movieItem of movieArray) {
-        const response = await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&i=${movieItem}`)
+        const response = await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&i=${movieItem}`)
         const data = await response.json()
         renderMovie(data)
     }
