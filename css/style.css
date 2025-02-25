@@ -132,9 +132,9 @@ p {
 }
 
 .top-container {
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
 }
 
 .movie-title {
@@ -263,7 +263,7 @@ p {
   .middle-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
   }
 
   .toggle-watchlist-button {
@@ -326,16 +326,58 @@ p {
     max-width: 600px;
   }
 
-  .middle-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
   .toggle-watchlist-button {
     display: inline-flex;
     margin: 0 0 0 1em;
     font-size: 1.25rem;
   }
+}
 
+@media (min-width: 1920px) {
+  .heading-wrapper,
+  .search-form,
+  .movies-wrapper {
+    font-size: 4rem;
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+
+  .navigation-link {
+    font-size: 3rem;
+  }
+
+  .page-title {
+    font-size: 5rem;
+  }
+
+  .search-bar, .search-btn {
+    font-size: 2rem;
+  }
+
+  .column-container {
+    max-width: 800px;
+  }
+
+  .movie-poster {
+    width: 200px;
+    height: calc(200px * 1.489);
+  }
+
+  .movie-title {
+    font-size: 2.5rem;
+  }
+
+  .star-icon {
+    width: 50px;
+  }
+
+  .movie-rating {
+    font-size: 2rem;
+  }
+
+  .movie-duration,
+  .movie-genres,
+  .movie-synopsis {
+    font-size: 2rem;
+  }
 }
