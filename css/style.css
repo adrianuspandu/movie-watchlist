@@ -195,14 +195,6 @@ p {
   margin-right: 0.25em;
 }
 
-/* WATCHLIST STYLING */
-.watchlist-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  padding: 2.75em 1.5em;
-}
-
 @media (min-width: 481px) {
   .heading-wrapper,
   .search-form,
@@ -225,6 +217,27 @@ p {
 
   .page-title {
     font-size: 3rem;
+  }
+
+  .empty-state-wrapper {
+    margin-top: 15em;
+  }
+  
+  .film-icon {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .no-results-wrapper {
+    margin-top: 10em;
+    padding: 0 10em;
+  }
+  
+  .empty-state-text,
+  .no-results-text {
+    color: #dfdddd;
+    text-align: center;
+    font-size: 2rem;
   }
 
   .movie-poster {
@@ -293,6 +306,22 @@ p {
     font-size: 3rem;
   }
 
+  .empty-state-wrapper {
+    margin-top: 5em;
+  }
+  
+  .film-icon {
+    width: 240px;
+    height: 240px;
+  }
+  
+  .empty-state-text,
+  .no-results-text {
+    color: #dfdddd;
+    text-align: center;
+    font-size: 2rem;
+  }
+
   .movie-poster {
     width: 150px;
     height: calc(150px * 1.489);
@@ -354,6 +383,22 @@ p {
     font-size: 2rem;
   }
 
+  .empty-state-wrapper {
+    margin-top: 12em;
+  }
+  
+  .film-icon {
+    width: 240px;
+    height: 240px;
+  }
+  
+  .empty-state-text,
+  .no-results-text {
+    color: #dfdddd;
+    text-align: center;
+    font-size: 3rem;
+  }
+
   .column-container {
     max-width: 800px;
   }
@@ -378,6 +423,14 @@ p {
   .movie-duration,
   .movie-genres,
   .movie-synopsis {
+    font-size: 2rem;
+  }
+
+  .toggle-icon {
+    width: 40px;
+  }
+
+  .toggle-watchlist-button {
     font-size: 2rem;
   }
 }
