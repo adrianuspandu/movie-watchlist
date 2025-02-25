@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Movie Watchlist</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="heading-wrapper">
+        <h1 class="page-title">Find Your Film</h1>
+        <nav><a role="button" class="navigation-link" href="/watchlist.html">My Watchlist</a></nav>
+      </div>
+
+      <form id="search-form" class="search-form">
+        <input
+          id="search-bar"
+          type="text"
+          class="search-bar"
+          placeholder="Search for a movie"
+        />
+        <button id="search-btn" class="search-btn">Search</button>
+      </form>
+    </header>
+
+    <main>
+      <div id="empty-state-wrapper" class="empty-state-wrapper">
+        <img class="film-icon" src="assets/film.svg" />
+        <h2 class="empty-state-text">Start Exploring</h2>
+      </div>
+
+      <div id="no-results-wrapper" class="no-results-wrapper">
+        <h2 class="no-results-text">
+          Unable to find what you’re looking for. Please try another search.
+        </h2>
+      </div>
+
+      <div id="movies-wrapper" class="movies-wrapper"></div>
+      </div>
+    </main>
+    <script src="js/index.js"></script>
+  </body>
+</html>
