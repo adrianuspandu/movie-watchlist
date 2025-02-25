@@ -73,4 +73,8 @@ function removeFromWatchlist(e) {
     console.log(watchlistArray)
     renderWatchlist()
   }
+
+  if (watchlistArray.length === 0) {
+    emptyStateWrapper.style.display = 'flex'
+}
 }
