@@ -1,6 +1,6 @@
 # Movie Watchlist
-This is one of the projects in the Scrimba Frontend Career Path.  
-I was able to work with the OMDb API to fetch the movie database, and although it looks  
+This is one of the projects in the Scrimba Frontend Career Path.
+I was able to work with the OMDb API to fetch the movie database, and although it looks
 like a completed project, I'd like to address some areas for improvement in the future.  
 
 ## List of improvements that could be made:
